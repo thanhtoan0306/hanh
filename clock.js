@@ -6,7 +6,6 @@ function clock() {
     hour = appendZero(hour);
     min = appendZero(min);
     sec = appendZero(sec);
-    console.log(hour, min, sec);
     document.getElementById("clock").innerText = `${hour}:${min}:${sec}`
     setTimeout(clock, 1000);
 }

@@ -21,22 +21,38 @@ body {
     background-color: #fe8daa;
 }
 
+.first {
+    padding-left: 20px;
+}
+
+.avatar-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.avatar-container img {
+    margin: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 /* styling the outer music container */
 .music-container {
     width: 350px;
+    height: 100px;
     background-color: #efefef;
     border-radius: 20px;
     box-shadow: inset -1px -1px 5px rgba(33, 33, 33, 0.5), inset 1px 1px 5px rgba(33, 33, 33, 0.5);
     display: flex;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     position: relative;
-    margin: 100px 0;
     z-index: 10;
 }
 
 .img-container {
     position: relative;
-    width: 75px;
+    width: 100px;
 }
 
 /* styling the image to look like a disc by placing a small circle in it*/
@@ -57,8 +73,11 @@ body {
     border-radius: 50%;
     object-fit: cover;
     height: 75px;
-    width: inherit;
+    width: 75px;
     position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
     animation: rotate 5s linear infinite;
@@ -95,10 +114,10 @@ body {
 .action-btn {
     border: 0;
     border-radius: 20px;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
-    padding: 10px;
-    margin: 0 20px;
+    padding: 10px 0px 10px;
+    margin: 0 15px;
 }
 
 .action-btn.action-btn-big {

@@ -18,9 +18,12 @@
 } */
 
 body {
-    background-color: #fe8daa;
-}
+background: rgb(241,116,211);
+background: linear-gradient(90deg, rgba(241,116,211,0.9948573179271709) 0%, rgba(221,157,231,1) 33%, rgba(255,254,254,1) 100%);
 
+
+
+}
 .first {
     padding-left: 20px;
 }
@@ -31,10 +34,21 @@ body {
 }
 
 .avatar-container img {
+    object-fit: cover;
     margin: auto;
     border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+.big-button {
+    height: 50px;
+    width: 100px;
+}
+
+.button-2 {
+    margin-left: 10px;
+    color: black;
 }
 
 /* styling the outer music container */

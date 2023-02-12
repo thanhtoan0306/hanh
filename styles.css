@@ -22,10 +22,14 @@ background: rgb(241,116,211);
 background: linear-gradient(90deg, rgba(241,116,211,0.9948573179271709) 0%, rgba(221,157,231,1) 33%, rgba(255,254,254,1) 100%);
 
 
+}
 
+.nav li {
+    margin: 10px
 }
 .first {
     padding-left: 20px;
+    padding-right: 20px ;
 }
 
 .avatar-container {

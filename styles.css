@@ -7,21 +7,40 @@
 
 body {
 background: white;
+padding: 0 20px;
 
 
 }
 
+.head {
+    display: flex;
+    justify-content: space-between;
+}
 
+.main-tag {
+    /* display: flex;
+    justify-content: center; */
+}
 .avatar-container {
     display: flex;
-    justify-content: center;
-    padding: 30px;
-    margin-top: 20vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15vh;
     margin-bottom: 20px;
 }
 
 .img-plate {
+    margin: 20px;
     padding:30px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-plate-2 {
+    height: auto;
+    min-width: 100px;
+    margin-top: 20px;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

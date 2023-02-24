@@ -37,61 +37,59 @@ body {
     border-radius: 10px;
 }
 
-.count-down {
-    margin-top: 30px;
-    width: 360px;
-    height: 60px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .avatar-container {
     display: flex;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     gap: 50px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    /* height: 360px; */
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .img-plate {
-    /* margin: 20px; */
-    height: 100%;
-    padding: 30px;
+    width: 360px;
+    height: 420px;
+    background-color: gray;
+    opacity: 10%;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .img-plate-2 {
     flex: 1;
-    height: 360px;
-    /* width: 80% - 300px; */
+    height: 420px;
     min-width: 360px;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.white-cont {
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    margin: 20px 20px 0 20px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-cont {
+    width: 280px;
+    height: 280px;
+    margin: 30px auto 0 auto;
 }
 
 .main-img {
     object-fit: cover;
     margin: auto;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 
 .bday-container {
     display: flex;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 50px;
@@ -105,15 +103,13 @@ body {
 }
 
 .blank-row {
-    height: 60px;
+    height: 40px;
     width: 100px;
-    /* background-color: gray; */
 }
 
 .foot {
     height: 100px;
     padding: 20px;
-    /* background-color: gray; */
     bottom: 0;
     position: fixed;
     left: 0;
@@ -123,9 +119,11 @@ body {
 }
 
 .bar {
-    /* background-color: gray; */
     height: 100%;
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}   

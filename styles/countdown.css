@@ -3,3 +3,52 @@
     /* min-width: 360px; */
     min-height: 150px;
 }
+
+.card {
+    width: 90%;
+    min-width: 360px;
+    cursor: pointer;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: white;
+    padding: 5em;
+    transform-style: preserve-3d;
+}
+
+.card:hover .content {
+    transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+}
+
+.subtitle {
+    transform: translateZ(2rem);
+}
+
+.back {
+    transform: rotateY(0.5turn);
+    background-color: white;
+}
+
+.description {
+    transform: translateZ(3rem);
+}

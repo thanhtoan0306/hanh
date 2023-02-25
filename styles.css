@@ -51,8 +51,7 @@ body {
 .img-plate {
     width: 360px;
     height: 420px;
-    background-color: gray;
-    opacity: 10%;
+    background-color: rgba(90, 93, 94, 0.078);
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -66,26 +65,27 @@ body {
 }
 
 .white-cont {
+    padding: 20px;
     width: 320px;
     height: 320px;
     background-color: white;
     margin: 20px 20px 0 20px;
     border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .img-cont {
-    width: 280px;
-    height: 280px;
-    margin: 30px auto 0 auto;
+    width: 100%;
+    height: 100%;
+    /* margin: 30px auto 0 auto; */
 }
 
-.main-img {
+.img-cont img {
     object-fit: cover;
-    margin: auto;
-    border-radius: 50%;
-    width: 280px;
-    height: 280px;
+    /* margin: auto; */
+    /* border-radius: 50%; */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    width: 100%;
+    height: 100%;
 }
 
 .bday-container {

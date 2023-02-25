@@ -56,14 +56,6 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.img-plate-2 {
-    flex: 1;
-    height: 420px;
-    min-width: 360px;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
 .white-cont {
     padding: 20px;
     width: 320px;
@@ -117,6 +109,44 @@ body {
 
 .action-btn:focus {
     outline: 0;
+}
+
+.album-section {
+    flex: 1;
+    height: 420px;
+    min-width: 360px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.album-title {
+    height: 70px;
+    font-size:x-large;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.album-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;    
+}
+.song-item {
+    height: 60px;
+    padding-left: 20px;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.chosen-song {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
 }
 
 .bday-container {

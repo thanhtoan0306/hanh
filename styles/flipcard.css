@@ -1,7 +1,7 @@
 .flip-card {
     background-color: transparent;
-    width: 150px;
-    height: 80%;
+    width: 120px;
+    height: 150px;
     perspective: 1000px;
     font-family: sans-serif;
 }
@@ -56,3 +56,11 @@
     transform: rotateY(180deg);
 }
 
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+    width: 64%;
+    min-width: 360px;
+    gap: 10px;
+    justify-content: space-evenly;
+}

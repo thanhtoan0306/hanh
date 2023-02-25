@@ -54,6 +54,7 @@
 }
 
 .song-item {
+    width: 100%;
     height: 60px;
     padding-left: 20px;
     font-size: large;
@@ -63,6 +64,7 @@
 }
 
 .chosen-song {
+    width: 100%;
     border: 1px solid black;
     color: black;
     border-radius: 20px;

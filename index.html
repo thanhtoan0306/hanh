@@ -43,17 +43,20 @@
                         <img src="images/hanh3.jpg" id="avatar" />
                     </div>
                 </div>
-                <div class="navigation">
-                    <button id="prev" class="action-btn">
-                        <i class="fas fa-backward"></i>
-                    </button>
-                    <button id="play" class="action-btn action-btn-big">
-                        <i class="fas fa-play"></i>
-                    </button>
-                    <button id="next" class="action-btn">
-                        <i class="fas fa-forward"></i>
-                    </button>
+                <div class="music-container" id="audio-container">
+                    <audio src="music/lenka.mp3" id="audio"></audio>
+                    <div class="navigation">
+                        <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
 
+                    </div>
                 </div>
                 <!-- <img class="main-img" src="" id="avatar" /> -->
             </div>
@@ -78,7 +81,7 @@
                             <h3 class="title">COUNT DOWN</h3>
                             <p class="subtitle">7 ngày 11:24:09</p>
                         </div>
-                
+
                         <div class="back">
                             <p class="description">
                                 "Chờ đợi đến 00:00 20-4-2023 để đọc được những lời chúc."
@@ -152,7 +155,7 @@
     </div>
 
 
-
+    <script src="code/musicControl.js"></script>
 </body>
 
 </html>

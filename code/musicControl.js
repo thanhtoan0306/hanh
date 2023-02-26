@@ -11,10 +11,10 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ['lenka', 'lenka', 'lenka','lenka'];
+const songs = ['lenka', 'exhateme', 'lenka','lenka'];
 
 // Keep track of song
-let songIndex = 1;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -23,7 +23,7 @@ loadSong(songs[songIndex]);
 function loadSong(song) {
   // title.innerText = song;
   audio.src = `music/${song}.mp3`;
-  // cover.src = `images/${song}.jpg`;
+  // cover.src = `images/${song}.*`;
 }
 
 // Play song

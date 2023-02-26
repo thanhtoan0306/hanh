@@ -8,12 +8,16 @@
 body {
     background: white;
     font-family: Arial, Helvetica, sans-serif;
-
+    margin-left: -1px;
+    margin-right: -1px;
 }
 
 .head {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 2px -2px rgba(100, 100, 111, 0.2);
 }
 
 .nav {
@@ -21,7 +25,7 @@ body {
     font-size: large;
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -29,11 +33,11 @@ body {
     width: 100px;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 .home {
-    border: 1px solid black;
-    border-radius: 10px;
+    border-bottom: 2px solid black;
 }
 
 .avatar-container {
@@ -48,8 +52,8 @@ body {
 }
 
 .img-plate {
-    width: 360px;
-    height: 420px;
+    width: 340px;
+    height: 400px;
     background-color: rgba(90, 93, 94, 0.078);
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -57,8 +61,8 @@ body {
 
 .white-cont {
     padding: 20px;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     background-color: white;
     margin: 20px 20px 0 20px;
     border-radius: 20px;
@@ -67,13 +71,10 @@ body {
 .img-cont {
     width: 100%;
     height: 100%;
-    /* margin: 30px auto 0 auto; */
 }
 
 .img-cont img {
     object-fit: cover;
-    /* margin: auto; */
-    /* border-radius: 50%; */
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     width: 100%;
     height: 100%;
@@ -90,9 +91,8 @@ body {
     min-height: 200px;
     height: fit-content;
     width: 80%;
-    min-width: 360px;
+    min-width: 340px;
     padding: 10px;
-
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -105,23 +105,15 @@ body {
 .foot {
     display: none;
     height: 80px;
-    /* padding: 20px; */
     bottom: 0;
     position: fixed;
     left: 0;
     right: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: white;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 .bar {
     height: 100%;
     width: 100%;
-    /* border-radius: 10px; */
-
-    /* width: 80%; */
-    /* margin-left: auto;
-    margin-right: auto; */
 }

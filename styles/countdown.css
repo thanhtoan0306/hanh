@@ -1,12 +1,12 @@
 .countdown {
     width: 36%;
-    /* min-width: 360px; */
+    min-width: 320px;
     min-height: 150px;
 }
 
 .card {
     width: 90%;
-    min-width: 360px;
+    min-width: 320px;
     cursor: pointer;
 }
 

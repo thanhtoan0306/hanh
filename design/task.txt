@@ -1,0 +1,4 @@
+sun26: {
+    updating pop up bar with avatar, progress, volume and quit button;
+    updating list;
+}

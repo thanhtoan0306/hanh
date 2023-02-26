@@ -20,6 +20,7 @@
 }
 
 
+
 .action-btn.action-btn-big {
     color: black;
     font-size: 20px;
@@ -27,6 +28,10 @@
 
 .action-btn:focus {
     outline: 0;
+}
+
+.action-btn:hover {
+    color: #f24175;
 }
 
 .album-section {

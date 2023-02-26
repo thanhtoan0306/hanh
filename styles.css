@@ -33,9 +33,13 @@ body {
     text-align: center;
     cursor: pointer;
 }
+.nav div:hover {
+    color: #f24175;
+}
 
 .home {
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
+    color: #f24175;
 }
 
 .avatar-container {

@@ -11,19 +11,30 @@ const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 
 // Song titles
-const songs = ['lenka', 'exhateme', 'lenka','lenka'];
+const songsList = [
+  {
+    title: 'lenka',
+    mp3: 'music/lenka.mp3',
+    image: 'images/lenka.jpg',
+  },
+  {
+    title: 'exhateme',
+    mp3: 'music/exhateme.mp3',
+    image: 'images/exhateme.jpg',
+  },
+]
 
 // Keep track of song
 let songIndex = 0;
 
 // Initially load song details into DOM
-loadSong(songs[songIndex]);
+loadSong(songsList[songIndex]);
 
 // Update song details
 function loadSong(song) {
-  // title.innerText = song;
-  audio.src = `music/${song}.mp3`;
-  // cover.src = `images/${song}.*`;
+  title.innerText = song.title;
+  audio.src = song.mp3;
+  cover.src = song.image;
 }
 
 // Play song
@@ -49,10 +60,10 @@ function prevSong() {
   songIndex--;
 
   if (songIndex < 0) {
-    songIndex = songs.length - 1;
+    songIndex = songsList.length - 1;
   }
 
-  loadSong(songs[songIndex]);
+  loadSong(songsList[songIndex]);
 
   playSong();
 }
@@ -61,11 +72,11 @@ function prevSong() {
 function nextSong() {
   songIndex++;
 
-  if (songIndex > songs.length - 1) {
+  if (songIndex > songsList.length - 1) {
     songIndex = 0;
   }
 
-  loadSong(songs[songIndex]);
+  loadSong(songsList[songIndex]);
 
   playSong();
 }
@@ -74,7 +85,7 @@ function nextSong() {
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
-  // progress.style.width = `${progressPercent}%`;
+  progress.style.width = `${progressPercent}%`;
 }
 
 // Set progress bar
@@ -88,8 +99,6 @@ function setProgress(e) {
 
 // Event listeners
 playBtn.addEventListener('click', () => {
-  // playSong();
-  console.log(musicContainer);
   const isPlaying = musicContainer.classList.contains('play');
 
   if (isPlaying) {

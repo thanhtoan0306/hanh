@@ -74,3 +74,90 @@
     color: black;
     border-radius: 20px;
 }
+
+
+/* bar sssssssssssss */
+
+
+
+
+
+
+.img-container {
+    /* position: relative; */
+    width: 50px;
+}
+
+.img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: inherit;
+    /* position: absolute; */   
+    /* bottom: 0;
+    left: 0; */
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+
+}
+
+.audio-container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.audio-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: gray;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* border-radius: 15px 15px 0 0; */
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 20px; */
+    height: 100%;
+    width: 100%;
+    /* padding: 10px 10px 10px 10px; */
+    /* opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in; */
+    /* z-index: 10; */
+}
+
+.audio-container.play .audio-info {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.audio-info h4 {
+    margin: 0;
+    width: 100px;
+}
+
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 70%;
+}
+
+.progress {
+    background-color: #000;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+    transition: width 0.1s linear;
+}

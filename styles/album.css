@@ -96,7 +96,7 @@
     /* position: absolute; */   
     /* bottom: 0;
     left: 0; */
-    animation: rotate 3s linear infinite;
+    animation: rotate 10s linear infinite;
     animation-play-state: paused;
 
 }
@@ -136,8 +136,7 @@
 }
 
 .audio-container.play .audio-info {
-    opacity: 1;
-    transform: translateY(-100%);
+    
 }
 
 .audio-info h4 {

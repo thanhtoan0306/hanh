@@ -1,14 +1,13 @@
 const musicContainer = document.getElementById('audio-container');
-
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
-console.log(musicContainer, playBtn, nextBtn);
 const audio = document.getElementById('audio');
 const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
+const popupBar = document.getElementById('popup-bar')
 
 // Song titles
 const songsList = [
@@ -43,6 +42,7 @@ function playSong() {
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
 
+  popupBar.style.display = 'initial'
   audio.play();
 }
 
@@ -116,7 +116,7 @@ nextBtn.addEventListener('click', nextSong);
 audio.addEventListener('timeupdate', updateProgress);
 
 // Click on progress bar
-// progressContainer.addEventListener('click', setProgress);
+progressContainer.addEventListener('click', setProgress);
 
 // Song ends
 audio.addEventListener('ended', nextSong);

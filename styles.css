@@ -105,7 +105,7 @@ body {
 }
 
 .foot {
-    /* display: none; */
+    display: none;
     height: 80px;
     bottom: 0;
     position: fixed;

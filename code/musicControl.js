@@ -60,6 +60,7 @@ function playSong() {
   musicContainer.classList.add('play');
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
+  changeSong()
 
   popupBar.style.display = 'initial'
   audio.play();
@@ -80,6 +81,14 @@ function chooseSong() {
   playSong();
 }
 
+//Change song
+function changeSong() {
+  const oldSong = document.querySelector('.chosen-song');
+  oldSong?.classList.remove("chosen-song");
+  const newSong = document.querySelector(`div#id${songIndex}`);
+  newSong?.classList.add("chosen-song");
+}
+
 // Previous song
 function prevSong() {
   songIndex--;
@@ -89,6 +98,7 @@ function prevSong() {
   }
 
   loadSong(songsList[songIndex]);
+  changeSong()
 
   playSong();
 }
@@ -102,6 +112,7 @@ function nextSong() {
   }
 
   loadSong(songsList[songIndex]);
+  changeSong()
 
   playSong();
 }
@@ -126,16 +137,14 @@ function setProgress(e) {
 
 songsList.forEach((element, index) => {
   let div = document.createElement('div');
-  div.setAttribute("id", "song-item");
+  div.setAttribute("id", `id${index}`);
   div.classList.add("song-item");
   div.innerHTML = `${index + 1}. ${element.title}`;
 
   div.onclick = function () {
-    const chosenSong = document.querySelector('div#song-item.song-item.chosen-song');
-    chosenSong?.classList.remove("chosen-song");
-    songIndex = index
-    div.classList.add("chosen-song");
-    chooseSong()
+    songIndex = index;
+    changeSong();
+    chooseSong();
   };
   
   albumList.appendChild(div);

@@ -126,21 +126,15 @@ function setProgress(e) {
 
 songsList.forEach((element, index) => {
   let div = document.createElement('div');
-  div.setAttribute("id", "song-time");
+  div.setAttribute("id", "song-item");
   div.classList.add("song-item");
   div.innerHTML = `${index + 1}. ${element.title}`;
-  // div.classList.remove("chosen-song");
-  // div.onclick = chooseSong;
+
   div.onclick = function () {
-    
+    const chosenSong = document.querySelector('div#song-item.song-item.chosen-song');
+    chosenSong?.classList.remove("chosen-song");
     songIndex = index
-    console.log('a', songIndex, index);
-    div.classList.remove("chosen-song");
-    if (songIndex === index) {
-      div.classList.add("chosen-song");
-    } else {
-      div.classList.remove("chosen-song");
-    }
+    div.classList.add("chosen-song");
     chooseSong()
   };
   

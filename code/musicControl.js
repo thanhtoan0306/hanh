@@ -7,7 +7,12 @@ const progress = document.getElementById('progress');
 const progressContainer = document.getElementById('progress-container');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
-const popupBar = document.getElementById('popup-bar')
+const popupBar = document.getElementById('popup-bar');
+const albumList = document.getElementById('album-list');
+const songItem = document.getElementById('song-item');
+
+// Keep track of song
+let songIndex = 0;
 
 // Song titles
 const songsList = [
@@ -21,10 +26,24 @@ const songsList = [
     mp3: 'music/exhateme.mp3',
     image: 'images/exhateme.jpg',
   },
+  {
+    title: 'exhateme',
+    mp3: 'music/exhateme.mp3',
+    image: 'images/exhateme.jpg',
+  },
+  {
+    title: 'lenka',
+    mp3: 'music/lenka.mp3',
+    image: 'images/lenka.jpg',
+  },
+  {
+    title: 'lenka',
+    mp3: 'music/lenka.mp3',
+    image: 'images/lenka.jpg',
+  },
 ]
 
-// Keep track of song
-let songIndex = 0;
+
 
 // Initially load song details into DOM
 loadSong(songsList[songIndex]);
@@ -53,6 +72,12 @@ function pauseSong() {
   playBtn.querySelector('i.fas').classList.remove('fa-pause');
 
   audio.pause();
+}
+
+//Choose song
+function chooseSong() {
+  loadSong(songsList[songIndex]);
+  playSong();
 }
 
 // Previous song
@@ -97,6 +122,32 @@ function setProgress(e) {
   audio.currentTime = (clickX / width) * duration;
 }
 
+
+
+songsList.forEach((element, index) => {
+  let div = document.createElement('div');
+  div.setAttribute("id", "song-time");
+  div.classList.add("song-item");
+  div.innerHTML = `${index + 1}. ${element.title}`;
+  // div.classList.remove("chosen-song");
+  // div.onclick = chooseSong;
+  div.onclick = function () {
+    
+    songIndex = index
+    console.log('a', songIndex, index);
+    div.classList.remove("chosen-song");
+    if (songIndex === index) {
+      div.classList.add("chosen-song");
+    } else {
+      div.classList.remove("chosen-song");
+    }
+    chooseSong()
+  };
+  
+  albumList.appendChild(div);
+
+});
+
 // Event listeners
 playBtn.addEventListener('click', () => {
   const isPlaying = musicContainer.classList.contains('play');
@@ -120,4 +171,7 @@ progressContainer.addEventListener('click', setProgress);
 
 // Song ends
 audio.addEventListener('ended', nextSong);
+
+// Click on progress bar
+// songItem.addEventListener('click', chooseSong);
 

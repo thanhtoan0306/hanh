@@ -72,9 +72,9 @@
 
 .chosen-song {
     width: 100%;
-    border: 1px solid black;
-    color: black;
-    border-radius: 20px;
+    color: white;
+    background-color: #f24175;
+    transform: skew(-10deg);
 }
 
 

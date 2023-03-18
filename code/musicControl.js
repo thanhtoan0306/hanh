@@ -50,6 +50,7 @@ loadSong(songsList[songIndex]);
 
 // Update song details
 function loadSong(song) {
+  changeSongTheme()
   title.innerText = song.title;
   audio.src = song.mp3;
   cover.src = song.image;
@@ -60,7 +61,7 @@ function playSong() {
   musicContainer.classList.add('play');
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
-  changeSong()
+  changeSongTheme()
 
   popupBar.style.display = 'initial'
   audio.play();
@@ -82,7 +83,7 @@ function chooseSong() {
 }
 
 //Change song
-function changeSong() {
+function changeSongTheme() {
   const oldSong = document.querySelector('.chosen-song');
   oldSong?.classList.remove("chosen-song");
   const newSong = document.querySelector(`div#id${songIndex}`);
@@ -98,7 +99,7 @@ function prevSong() {
   }
 
   loadSong(songsList[songIndex]);
-  changeSong()
+  changeSongTheme()
 
   playSong();
 }
@@ -112,7 +113,7 @@ function nextSong() {
   }
 
   loadSong(songsList[songIndex]);
-  changeSong()
+  changeSongTheme()
 
   playSong();
 }
@@ -140,10 +141,11 @@ songsList.forEach((element, index) => {
   div.setAttribute("id", `id${index}`);
   div.classList.add("song-item");
   div.innerHTML = `${index + 1}. ${element.title}`;
+  changeSongTheme();
 
   div.onclick = function () {
     songIndex = index;
-    changeSong();
+    changeSongTheme();
     chooseSong();
   };
   

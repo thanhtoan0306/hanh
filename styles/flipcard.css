@@ -64,3 +64,34 @@
     gap: 10px;
     justify-content: space-evenly;
 }
+
+.container-comment {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    gap: 10px;
+    scroll-padding: 10px;
+    width: 90%;
+    min-width: 150px;
+    height: 200px;
+    /* max-height: 254px; */
+    background-color: white;
+    border: 2px solid coral;
+}
+
+.container-comment .item {
+    scroll-snap-align: start;
+    flex: 0 0 60%;
+    background: linear-gradient(120deg, coral 30%, rgb(255, 187, 163) 88%, rgb(255, 185, 160) 40%, coral 48%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: 400;
+    font-family: sans-serif;
+    border-radius: .2rem;
+}

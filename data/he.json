@@ -1,0 +1,187 @@
+{
+  "extra": {
+    "fatal_item_ids": [],
+    "logid": "202304021216225021E1E0E54BA0BF9A1E",
+    "now": 1680437783000
+  },
+  "log_pb": {
+    "impr_id": "202304021216225021E1E0E54BA0BF9A1E"
+  },
+  "status_code": 0,
+  "user": {
+    "account_type": 3,
+    "ad_virtual": false,
+    "advance_feature_item_order": [20],
+    "apple_account": 0,
+    "avatar_168x168": {
+      "uri": "tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_168x168.webp?x-expires=1680609600&x-signature=HwJ8D3MQvruV2Cr5t2PBfp6oeZo%3D",
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_168x168.jpeg?x-expires=1680609600&x-signature=gvILqR5lUJ%2BIz934AjlJsPI2zhQ%3D"
+      ]
+    },
+    "avatar_300x300": {
+      "uri": "tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_300x300.webp?x-expires=1680609600&x-signature=95cCvylWbBAlJHc5B%2FeLL8QiiQY%3D",
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_300x300.jpeg?x-expires=1680609600&x-signature=7ohw6o7kgr8cG6AfNxcDKuKm1Ic%3D"
+      ]
+    },
+    "avatar_larger": {
+      "uri": "tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_1080x1080.webp?x-expires=1680609600&x-signature=idqVBDb3urTcVP2aNsQAle8%2B3Og%3D",
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_1080x1080.jpeg?x-expires=1680609600&x-signature=YLlGfU4Q1q39e5%2F8OBE%2FkIuxQa0%3D"
+      ]
+    },
+    "avatar_medium": {
+      "uri": "tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_720x720.webp?x-expires=1680609600&x-signature=UwqAba682nxamiytkyglzgggwzw%3D",
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_720x720.jpeg?x-expires=1680609600&x-signature=Ybo3WP%2F7GipBzFXKwD80omQKvPA%3D"
+      ]
+    },
+    "avatar_thumb": {
+      "uri": "tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_100x100.webp?x-expires=1680609600&x-signature=FVRBE1rjw7UQS4uwj%2B8HIAEnzTQ%3D",
+        "https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/c0d03b702436d3e1959e2a3c82b612a2~c5_100x100.jpeg?x-expires=1680609600&x-signature=YqgxOmUaPh3l4trux8pO%2B8g8jhw%3D"
+      ]
+    },
+    "aweme_count": 244,
+    "biz_account_info": {
+      "added_contact_and_link_list": null,
+      "leads_gen": {
+        "action_name": "",
+        "business_data": "",
+        "has_leads_gen": false,
+        "page_id": 0,
+        "schema_url": ""
+      },
+      "permission_list": [
+        "001001",
+        "001002",
+        "001003",
+        "001004",
+        "002001",
+        "002002",
+        "002005",
+        "004001",
+        "004006",
+        "006001",
+        "007001",
+        "007004",
+        "008001",
+        "010001",
+        "010002",
+        "010003",
+        "015001",
+        "015002",
+        "015003",
+        "017001",
+        "018001"
+      ]
+    },
+    "category": "Media & Entertainment",
+    "commerce_user_info": {
+      "ad_experience_entry": true,
+      "ad_experience_text": "Ads",
+      "ad_revenue_rits": []
+    },
+    "commerce_user_level": 0,
+    "custom_verify": "",
+    "display_qna_on_profile": 1,
+    "enterprise_verify_reason": "",
+    "favoriting_count": 0,
+    "follow_status": 0,
+    "follower_count": 15268,
+    "follower_status": 0,
+    "following_count": 333,
+    "forward_count": 0,
+    "has_open_favorite": false,
+    "ins_id": "",
+    "is_acquaintance": false,
+    "is_block": false,
+    "is_blocked": false,
+    "is_effect_artist": false,
+    "is_star": false,
+    "live_commerce": false,
+    "live_push_notification_status": 2,
+    "message_chat_entry": false,
+    "mplatform_followers_count": 0,
+    "nickname": "Hạnh",
+    "nudge_guide_info": {
+      "guide_time": 0,
+      "show_guide": false
+    },
+    "original_musician": {
+      "digg_count": 0,
+      "music_count": 0,
+      "music_used_count": 0,
+      "new_release_clip_ids": null
+    },
+    "privacy_setting": {
+      "following_visibility": 1
+    },
+    "profile_tab_type": 0,
+    "recommend_reason_relation": "",
+    "room_id": 0,
+    "sec_uid": "MS4wLjABAAAAp9n6Axzhm-uUQvJLcZo9sd-SpvcITtJjMgP3ek-BiMjQ5JXNMswHgKhAkurd3887",
+    "secret": 0,
+    "share_info": {
+      "bool_persist": 1,
+      "now_invitation_card_image_urls": null,
+      "share_desc": "Check out Hạnh! #TikTok",
+      "share_desc_info": "TikTok: Make Every Second Count",
+      "share_image_url": {
+        "uri": "tos-useast2a-p-0037-aiso/932c89b33b1c43f19d3b697412ff0c92_1680358011",
+        "url_list": [
+          "https://p16-sign-va.tiktokcdn.com/obj/tos-useast2a-p-0037-aiso/932c89b33b1c43f19d3b697412ff0c92_1680358011?x-expires=1680458400&x-signature=pm9k7ckQt3i69S7P%2Fz4b3PQ0C5Y%3D"
+        ]
+      },
+      "share_title": "Join TikTok and see what I've been up to!",
+      "share_title_myself": "This TikTok app is soooooo fun! Follow me @he200496 on TikTok and check out my videos!",
+      "share_title_other": "This TikTok user is really cool. Follow @he200496 on TikTok and check out those amazing videos!",
+      "share_url": "https://www.tiktok.com/@he200496?_r=1&_d=e77k4i0f893948&language=en&sec_uid=MS4wLjABAAAAp9n6Axzhm-uUQvJLcZo9sd-SpvcITtJjMgP3ek-BiMjQ5JXNMswHgKhAkurd3887&share_author_id=6571296006024101889&source=h5_m"
+    },
+    "short_id": "0",
+    "show_favorite_list": false,
+    "signature": "Follow tiktok:@lifehometv 🏘\nBên e nhận thi công thiết kế công trình kiến trúc❤️",
+    "signature_language": "un",
+    "story_status": 0,
+    "supporting_ngo": {},
+    "tab_settings": {
+      "private_tab": {
+        "private_tab_style": 1,
+        "show_private_tab": false
+      },
+      "repost_tab": {
+        "show_repost_tab_other": 1
+      },
+      "shop_tab": {
+        "shop_schema": "",
+        "shop_schema_v2": "",
+        "show_shop_tab": true
+      }
+    },
+    "total_favorited": 109150,
+    "twitter_id": "",
+    "twitter_name": "",
+    "uid": "6571296006024101889",
+    "unique_id": "he200496",
+    "user_now_pack_info": {},
+    "verification_type": 0,
+    "video_icon": {
+      "uri": "tos-useast2a-avt-0068-giso/049a6b3cc67da3435000faa825c037f9",
+      "url_list": [
+        "https://p16-sign-va.tiktokcdn.com/obj/tos-useast2a-avt-0068-giso/049a6b3cc67da3435000faa825c037f9?x-expires=1680609600&x-signature=8MWQqocOvhpXDUf2XGkhmfv%2Bcoo%3D"
+      ]
+    },
+    "watch_status": false,
+    "with_commerce_enterprise_tab_entry": false,
+    "with_commerce_entry": false,
+    "with_new_goods": false,
+    "youtube_channel_id": "",
+    "youtube_channel_title": ""
+  }
+}

@@ -72,8 +72,8 @@
     padding: 10px;
     gap: 10px;
     scroll-padding: 10px;
-    width: 90%;
-    min-width: 150px;
+    width: 100%;
+    min-width: 1    50px;
     height: 200px;
     /* max-height: 254px; */
     background-color: white;
@@ -85,7 +85,8 @@
     flex: 0 0 60%;
     background: linear-gradient(120deg, coral 30%, rgb(255, 187, 163) 88%, rgb(255, 185, 160) 40%, coral 48%);
     display: flex;
-    justify-content: center;
+    /* gap: 20px; */
+    justify-content: space-around;
     align-items: center;
     color: bisque;
     text-align: center;

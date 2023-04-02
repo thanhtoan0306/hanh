@@ -1,38 +1,24 @@
-const api = new TikTokAPI();
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
+        'X-RapidAPI-Host': 'tiktok82.p.rapidapi.com'
+    }
+};
 
-api.login({
-    username: 'toan_tok',
-    password: 'Tiktok@0306'
-}).then(() => {
-    api.getFollowers().then((followers) => {
-        const subscribedFollowers = followers.data.filter((follower) => {
-            return follower.is_following;
-        });
+fetch('https://tiktok82.p.rapidapi.com/getProfile?username=he200496', options)
+    .then(response => response.json())
+    .then(response => console.log('user',response))
+    .catch(err => console.error(err));
 
-        const sortedFollowers = subscribedFollowers.sort((a, b) => {
-            return b.heart_count - a.heart_count;
-        });
+fetch('https://tiktok82.p.rapidapi.com/getVideoComments?video_id=7216142041615486234', options)
+    .then(response => response.json())
+    .then(response => console.log('video: ',response))
+    .catch(err => console.error(err));
 
-        const topFollowers = sortedFollowers.slice(0, 10);
 
-        const topNames = topFollowers.map((follower) => {
-            return follower.nickname;
-        });
+fetch('https://tiktok82.p.rapidapi.com/getUserVideos?user_id=6524313953195458562&secUid=MS4wLjABAAAAGUzY1LhWb54rdZhSqhJv4KfdFlSRrAoA3gBFTph3rl_x1bBEKQv1QdHK9gOvyMzU', options)
+    .then(response => response.json())
+    .then(response => console.log('video-user: ',response))
+    .catch(err => console.error(err));
 
-        const topNamesText = topNames.join(', ');
-
-        console.log('Top followers by heart count:', topNamesText);
-
-        const avatarContainer = document.getElementById('avatar-container');
-
-        topFollowers.forEach((follower) => {
-            const avatarImg = document.createElement('img');
-            avatarImg.src = follower.avatar_medium;
-            avatarContainer.appendChild(avatarImg);
-        });
-    }).catch((error) => {
-        console.error(error);
-    });
-}).catch((error) => {
-    console.error(error);
-});

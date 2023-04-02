@@ -59,7 +59,8 @@
 .comment {
     display: flex;
     flex-wrap: wrap;
-    width: 64%;
+    flex: 2;
+    /* width: 70%; */
     min-width: 360px;
     gap: 10px;
     justify-content: space-evenly;
@@ -73,7 +74,7 @@
     gap: 10px;
     scroll-padding: 10px;
     width: 100%;
-    min-width: 1    50px;
+    min-width: 150px;
     height: 200px;
     /* max-height: 254px; */
     background-color: white;
@@ -82,17 +83,32 @@
 
 .container-comment .item {
     scroll-snap-align: start;
-    flex: 0 0 60%;
-    background: linear-gradient(120deg, coral 30%, rgb(255, 187, 163) 88%, rgb(255, 185, 160) 40%, coral 48%);
+    min-width: 150px;
+    /* flex: 0 0 60%; */
+    background: #f24175;;
     display: flex;
-    /* gap: 20px; */
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    /* justify-content: center; */
     align-items: center;
     color: bisque;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.3em;
     font-weight: 400;
     font-family: sans-serif;
     border-radius: .2rem;
+}
+
+.container-comment .item .avatar{
+    width: 70px;
+    height: 70px;
+}
+
+.container-comment .item .avatar  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }

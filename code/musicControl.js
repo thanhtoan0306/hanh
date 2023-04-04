@@ -17,14 +17,14 @@ let songIndex = 0;
 // Song titles
 const songsList = [
   {
-    title: 'lenka',
+    title: 'Lenka',
     mp3: 'music/lenka.mp3',
     image: 'images/lenka.jpg',
   },
   {
-    title: 'exhateme',
+    title: 'Ex hate me',
     mp3: 'music/exhateme.mp3',
-    image: 'images/exhateme.jpg',
+    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/5508f6b8066b4e86a169705a81966add~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/07181b512c5f489785bff8c952ea978c.image?x-expires=1680642000&x-signature=M7rRwmzprrxQxQinI%2FBdDh22SdY%3D',
   },
   {
     title: 'Chuyện đôi ta',
@@ -32,14 +32,14 @@ const songsList = [
     image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/20c085636cff4ffbb11f080968332e36_1673784407~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/03ca30475ba84229b836ee260c6eed5f.image?x-expires=1680642000&x-signature=8zHkrW14R%2Fhao6wJLU%2BMLKAlhyo%3D',
   },
   {
-    title: 'lenka',
-    mp3: 'music/lenka.mp3',
-    image: 'images/lenka.jpg',
+    title: 'Ghé qua',
+    mp3: 'https://v16m.tiktokcdn.com/d8b9ef2776d79ac67c84b5c6bdf71f82/642c4f87/video/tos/useast2a/tos-useast2a-v-27dcd7-aiso/2ef0b8d0c9a340409dac84eb85f9c100/?a=1180&ch=0&cr=0&dr=0&er=2&cd=0%7C0%7C0%7C0&br=250&bt=125&mime_type=audio_mpeg&qs=6&rc=NGg4Nzg0NDZoaDdkNGk5OUBpajg3eWk6ZjM3ZzMzZjU8M0A2MjI2Y2FiXy0xY2IuNF9fYSNgXzBtcjRnNi1gLS1kMWNzcw%3D%3D&l=20230404152427119160C6CCA02303EB67&btag=80000&cc=3&ft=d2A~l-Inz7TnjVNfiyq8Z&download=true',
+    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/59a78e8ae61149328a42afd7df6b3811_1665156226~tplv-f5insbecw7-1:480:480.jpeg?x-expires=1680642000&x-signature=dMyx0INEP6bPfWC9OHSPygv3ivE%3D',
   },
   {
-    title: 'lenka',
-    mp3: 'music/lenka.mp3',
-    image: 'images/lenka.jpg',
+    title: 'Last Christmas',
+    mp3: 'https://v16m.tiktokcdn.com/6945ede891d1494b20595452c3406071/642c512a/video/tos/useast2a/tos-useast2a-v-27dcd7-aiso/oAIDUQGOTM3BEVnIf88Ob3yfwRdofDBgepmkEc/?a=1180&ch=0&cr=0&dr=0&er=2&cd=0%7C0%7C0%7C0&br=250&bt=125&mime_type=audio_mpeg&qs=6&rc=ZzgzOjU8NjhkOjpnNTQzN0BpM3F4eTo6ZmltajMzZjU8M0BgNF4wMi4vX14xLTYyYDViYSNsZ3JjcjRvMS5gLS1kMWNzcw%3D%3D&l=20230404153121208FFDA4302110049019&btag=80000&cc=3&ft=d2A~l-Inz7T21VNfiyq8Z&download=true',
+    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/4e3cd23004c34994a2a683bcee73818e_1677931071~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/05e8f5789c0c4b53874e2c8806438111.image?x-expires=1680642000&x-signature=bK9qNI9o5ael3gN7pTHJxBvYezA%3D',
   },
 ]
 

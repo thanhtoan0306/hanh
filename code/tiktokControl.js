@@ -1,15 +1,15 @@
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
-        'X-RapidAPI-Host': 'tiktok82.p.rapidapi.com'
-    }
-};
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
+//         'X-RapidAPI-Host': 'tiktok82.p.rapidapi.com'
+//     }
+// };
 
-fetch('https://tiktok82.p.rapidapi.com/getProfile?username=he200496', options)
-    .then(response => response.json())
-    .then(response => console.log('user',response))
-    .catch(err => console.error(err));
+// fetch('https://tiktok82.p.rapidapi.com/getProfile?username=he200496', options)
+//     .then(response => response.json())
+//     .then(response => console.log('user',response))
+//     .catch(err => console.error(err));
 
 // fetch('https://tiktok82.p.rapidapi.com/getVideoComments?video_id=7216142041615486234', options)
 //     .then(response => response.json())

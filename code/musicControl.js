@@ -27,9 +27,9 @@ const songsList = [
     image: 'images/exhateme.jpg',
   },
   {
-    title: 'exhateme',
-    mp3: 'music/exhateme.mp3',
-    image: 'images/exhateme.jpg',
+    title: 'Chuyện đôi ta',
+    mp3: 'https://v77.tiktokcdn.com/3348253cf4f276879770709800fe461b/642c4b5e/video/tos/useast2a/tos-useast2a-v-27dcd7-aiso/oQmS1zDoQGgHakhbc2eeHdu7yLxYfoEcnEeTcG/?a=1180&ch=0&cr=0&dr=0&er=2&cd=0%7C0%7C0%7C0&br=250&bt=125&mime_type=audio_mpeg&qs=6&rc=NWhkNjgzOzw7NDRpaDtlOEBpanRrNjY6ZnB4aTMzZjU8M0A2Yi0xNS8zXzUxX2FgXi1hYSNwb2U0cjRnbC5gLS1kMWNzcw%3D%3D&l=2023040415065829988BF39834D5272779&btag=80000&cc=13&ft=d2A~l-Inz7TabKNfiyq8Z&download=true',
+    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/20c085636cff4ffbb11f080968332e36_1673784407~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/03ca30475ba84229b836ee260c6eed5f.image?x-expires=1680642000&x-signature=8zHkrW14R%2Fhao6wJLU%2BMLKAlhyo%3D',
   },
   {
     title: 'lenka',

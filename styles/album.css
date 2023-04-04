@@ -120,12 +120,11 @@
 
 .audio-info {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    background-color: #f24175;
+    background-color: white;
     height: 100%;
     width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .audio-container.play .audio-info {
@@ -137,19 +136,29 @@
     width: 100px;
 }
 
+.pink-section {
+    height: 100%;
+    width: 200px;
+    /* background-color: black; */
+}
+
 .progress-container {
-    background: #fff;
+    border: #f24175 solid 1px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0;
-    height: 4px;
+    margin: 10px auto;
+    height: 10px;
     width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
 }
 
 .progress {
-    background-color: #000;
-    border-radius: 5px;
-    height: 100%;
+    background-color: #f24175;
+    border-radius: 5px; 
+    /* border: #f24175 solid 1px; */
+    height: 4px;
     width: 50%;
     transition: width 0.1s linear;
 }

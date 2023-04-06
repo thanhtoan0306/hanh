@@ -131,6 +131,11 @@ body {
     overflow: auto;
 }
 
+.modal-content-2 {
+    /* padding: 20px; */
+    width: 100%;
+}
+
 /* Style for the modal */
 .modal {
     display: none;

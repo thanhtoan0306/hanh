@@ -29,27 +29,27 @@ const songsList = [
   {
     title: 'Ex hate me',
     mp3: 'music/exhateme.mp3',
-    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/5508f6b8066b4e86a169705a81966add~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/07181b512c5f489785bff8c952ea978c.image?x-expires=1680642000&x-signature=M7rRwmzprrxQxQinI%2FBdDh22SdY%3D',
+    image: 'images/exhateme2.jpeg',
   },
   {
     title: 'Chuyện đôi ta',
     mp3: 'music/chuyendoita.mp3',
-    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/20c085636cff4ffbb11f080968332e36_1673784407~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/03ca30475ba84229b836ee260c6eed5f.image?x-expires=1680642000&x-signature=8zHkrW14R%2Fhao6wJLU%2BMLKAlhyo%3D',
+    image: 'images/chuyendoita.jpeg',
   },
   {
     title: 'Ghé qua',
     mp3: 'music/ghequa.mp3',
-    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/59a78e8ae61149328a42afd7df6b3811_1665156226~tplv-f5insbecw7-1:480:480.jpeg?x-expires=1680642000&x-signature=dMyx0INEP6bPfWC9OHSPygv3ivE%3D',
+    image: 'images/ghequa.jpeg',
   },
   {
     title: 'Last Christmas',
     mp3: 'music/lastchristmas.mp3',
-    image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/4e3cd23004c34994a2a683bcee73818e_1677931071~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/05e8f5789c0c4b53874e2c8806438111.image?x-expires=1680642000&x-signature=bK9qNI9o5ael3gN7pTHJxBvYezA%3D',
+    image: 'images/lastchristmas.jpeg',
   },
   {
     title: '3107-1',
     mp3: 'music/3107.mp3',
-    image: 'images/lenka.jpg',
+    image: 'images/3107.jpeg',
   },
 ]
 

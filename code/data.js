@@ -1,4 +1,4 @@
-let json_fl = {
+const json_fl = {
     "code": 0,
     "msg": "success",
     "processed_time": 0.4168,
@@ -4011,42 +4011,5 @@ let json_fl = {
     }
 }
 
-const loadCmt = () => {
-    const commentContainer = document.getElementById('container-comment');
-
-    const listCmt = json_fl.data.followers
-
-    listCmt.forEach(cmt => {
-        let div = document.createElement('div');
-        div.innerHTML = `<div class="avatar"><img src="${cmt.avatar}" /></div>${cmt.nickname}`
-        div.classList.add("item");
-        commentContainer.appendChild(div)
-    });
-
-}
-
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
-        'X-RapidAPI-Host': 'tiktok-video-no-watermark2.p.rapidapi.com'
-    }
-};
-
-
-
-const img = new Image();
-img.onload = function () {
-    loadCmt()
-};
-img.onerror = function () {
-    fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/followers?user_id=6571296006024101889&count=200&time=0', options)
-        .then(response => response.json())
-        .then(response => { console.log(response); json_fl = response; loadCmt() })
-        .catch(err => console.error(err));
-};
-img.src = 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/d74d0843bd5ae184a870bb09d49a1c2a~c5_300x300.jpeg?x-expires=1680872400&x-signature=ceW%2F9wyDvMfr2J1Wjd6y8HiUVhQ%3D';
-
-
-
+export default followerList1 =  json_fl
 //https://rapidapi.com/yi005/api/tiktok-video-no-watermark2

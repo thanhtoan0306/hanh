@@ -70,10 +70,15 @@
     cursor: pointer;
 }
 
+.song-item:hover {
+    background-color: #f2417588;
+    border-radius: 10px;
+}
+
 .chosen-song {
     width: 100%;
     color: white;
-    background-color: #f24175;
+    background-color: #f24175  !important;
     /* transform: skew(-10deg); */
     border-radius: 10px;
 }

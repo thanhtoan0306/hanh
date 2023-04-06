@@ -17,6 +17,11 @@ let songIndex = 0;
 // Song titles
 const songsList = [
   {
+    title: 'Happy birthday to Hanh',
+    mp3: 'music/happy.mp3',
+    image: 'images/lenka.jpg',
+  },
+  {
     title: 'The show - Lendka',
     mp3: 'music/lenka.mp3',
     image: 'images/lenka.jpg',
@@ -40,6 +45,11 @@ const songsList = [
     title: 'Last Christmas',
     mp3: 'music/lastchristmas.mp3',
     image: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-p-0037-aiso/4e3cd23004c34994a2a683bcee73818e_1677931071~tplv-dmt-logom:tos-useast2a-pv-0037-aiso/05e8f5789c0c4b53874e2c8806438111.image?x-expires=1680642000&x-signature=bK9qNI9o5ael3gN7pTHJxBvYezA%3D',
+  },
+  {
+    title: '3107-1',
+    mp3: 'music/3107.mp3',
+    image: 'images/lenka.jpg',
   },
 ]
 

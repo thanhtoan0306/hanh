@@ -53,10 +53,10 @@
 }
 
 .album-list {
-    display: flex;
-    flex-direction: column;
+    height: 330px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: auto;
 }
 
 .song-item {
@@ -74,7 +74,8 @@
     width: 100%;
     color: white;
     background-color: #f24175;
-    transform: skew(-10deg);
+    /* transform: skew(-10deg); */
+    border-radius: 10px;
 }
 
 

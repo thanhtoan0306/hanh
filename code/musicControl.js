@@ -17,7 +17,7 @@ let songIndex = 0;
 // Song titles
 const songsList = [
   {
-    title: 'Happy birthday to Hanh',
+    title: 'Happy birthday to Hanh 🎁',
     mp3: 'music/happy.mp3',
     image: 'images/lenka.jpg',
   },

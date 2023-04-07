@@ -4034,18 +4034,18 @@ const options = {
 };
 
 
-
-const img = new Image();
-img.onload = function () {
-    loadCmt()
-};
-img.onerror = function () {
-    fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/followers?user_id=6571296006024101889&count=200&time=0', options)
-        .then(response => response.json())
-        .then(response => { console.log(response); json_fl = response; loadCmt() })
-        .catch(err => console.error(err));
-};
-img.src = 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/d74d0843bd5ae184a870bb09d49a1c2a~c5_300x300.jpeg?x-expires=1680872400&x-signature=ceW%2F9wyDvMfr2J1Wjd6y8HiUVhQ%3D';
+loadCmt()
+// const img = new Image();
+// img.onload = function () {
+//     loadCmt()
+// };
+// img.onerror = function () {
+//     fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/followers?user_id=6571296006024101889&count=200&time=0', options)
+//         .then(response => response.json())
+//         .then(response => { console.log(response); json_fl = response; loadCmt() })
+//         .catch(err => console.error(err));
+// };
+// img.src = 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/d74d0843bd5ae184a870bb09d49a1c2a~c5_300x300.jpeg?x-expires=1680872400&x-signature=ceW%2F9wyDvMfr2J1Wjd6y8HiUVhQ%3D';
 
 
 

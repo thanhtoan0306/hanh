@@ -154,6 +154,10 @@ function setProgress(e) {
   audio.currentTime = (clickX / width) * duration;
 }
 
+function closePopupBar() {
+  popupBar.style.display = 'none';
+  pauseSong();
+}
 
 
 songsList.forEach((element, index) => {

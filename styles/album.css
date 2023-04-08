@@ -130,11 +130,8 @@
     background-color: white;
     height: 100%;
     width: 100%;
+    padding-right: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.audio-container.play .audio-info {
-    
 }
 
 .audio-info h4 {
@@ -144,7 +141,7 @@
 
 .pink-section {
     height: 100%;
-    width: 200px;
+    /* width: 200px; */
     /* background-color: black; */
 }
 

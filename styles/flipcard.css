@@ -61,6 +61,7 @@
     flex-wrap: wrap;
     flex: 2;
     /* width: 70%; */
+    position: relative;
     min-width: 360px;
     gap: 10px;
     justify-content: space-evenly;

@@ -10,6 +10,7 @@ const cover = document.getElementById('cover');
 const popupBar = document.getElementById('popup-bar');
 const albumList = document.getElementById('album-list');
 const songItem = document.getElementById('song-item');
+const durationCurrent = document.getElementById('duration')
 
 // Keep track of song
 let songIndex = 0;
@@ -127,12 +128,21 @@ function nextSong() {
 
   playSong();
 }
-
+function formatCurrentDuration(cur, dur) {
+  const minCur = Math.floor(cur / 60).toString().padStart(2, '0');;
+  const secCur = Math.floor(cur % 60).toString().padStart(2, '0');;
+  const minDur = Math.floor(dur / 60).toString().padStart(2, '0');;
+  const secDur = Math.floor(dur % 60).toString().padStart(2, '0');;
+  outputTime = `${minCur}:${secCur}/${minDur}:${secDur}`
+  return outputTime
+}
 // Update progress bar
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
+  console.log(currentTime + '/' + duration);
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
+  durationCurrent.innerHTML = formatCurrentDuration(currentTime || 0, duration || 0);
 }
 
 // Set progress bar
@@ -158,7 +168,7 @@ songsList.forEach((element, index) => {
     changeSongTheme();
     chooseSong();
   };
-  
+
   albumList.appendChild(div);
 
 });

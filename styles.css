@@ -268,3 +268,17 @@ body {
     /* z-index: 1; */
     /* overflow: hidden; */
 }
+
+.powered-by-container {
+    font-size: small;
+    color: #d2d2d2;
+    font-family: Helvetica, arial, sans-serif;
+    float: right;
+    position: static;
+    bottom: 2vh;
+    padding-right: 2vw;
+}
+
+.powered-by-container  a{
+    text-decoration: none;
+}

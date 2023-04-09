@@ -63,12 +63,21 @@ body {
 }
 
 .white-cont {
+    position: relative;
     padding: 20px;
     width: 300px;
     height: 300px;
     background-color: white;
     margin: 20px 20px 0 20px;
     border-radius: 20px;
+}
+
+.white-cont .sign {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-family: 'Handwritten Signature', sans-serif;
+
 }
 
 .img-cont {
@@ -279,6 +288,6 @@ body {
     padding-right: 2vw;
 }
 
-.powered-by-container  a{
+.powered-by-container a {
     text-decoration: none;
 }

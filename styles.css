@@ -19,6 +19,28 @@ body {
     box-shadow: 0 4px 2px -2px rgba(100, 100, 111, 0.2);
 }
 
+.lol {
+    /* width: fit-content; */
+    background-color: #cfef00;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.lol .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav {
     font-weight: bold;
     font-size: large;

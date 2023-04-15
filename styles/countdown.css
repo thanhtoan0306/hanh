@@ -77,10 +77,9 @@
 #timer {
     font-size: 46px;
     font-weight: 400;
-    color: white;
     height: 100%;
     max-width: 100%;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
 }
@@ -90,14 +89,15 @@
     text-align: center;
     width: 70px;
     padding: 5px;
-    background: #020b43;
+    /* background: #cfef00; */
     border-radius: 10px;
+    border: gainsboro solid 1px;
     /* border: 2px; */
     margin: 5px;
 }
 
 #timer div span {
-    color: #ffffff;
+    color: black;
     display: block;
     margin-top: 15px;
     font-size: .35em;

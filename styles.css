@@ -21,13 +21,16 @@ body {
 
 .lol {
     /* width: fit-content; */
-    background-color: #cfef00;
+    /* background-color: #cfef00; */
+    border: #eee solid 1px;
     border-radius: 30px;
     padding: 10px;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .lol .icon {

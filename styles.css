@@ -228,8 +228,8 @@ body {
     transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #79A70A;
-    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    background: #cfef00;
+    background: linear-gradient(#9BC90D 0%, #cfef00 100%);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px;

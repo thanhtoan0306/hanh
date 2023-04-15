@@ -9,18 +9,24 @@ var x = setInterval(function () {
     var distance = countDownDate - now;
 
     // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var d = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var s = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = "Đếm ngược: " + days + " ngày " + hours + " giờ "
-        + minutes + " phút " + seconds + " giây";
+    document.getElementById("timer")
+        .innerHTML =
+        '<div>' + d + '<span>Ngày</span></div>' +
+        '<div>' + h + '<span>Giờ</span></div>' +
+        '<div>' + m + '<span>Phút</span></div>' +
+        '<div>' + s + '<span>Giây</span></div>';
+    // Display the result in the element with id="timer"
+    // document.getElementById("timer").innerHTML = "Đếm ngược: " + days + " ngày " + hours + " giờ "
+    //     + minutes + " phút " + seconds + " giây";
 
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "HAPPY BIRTHDAY HANH";
+        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY HANH";
     }
 }, 1000);

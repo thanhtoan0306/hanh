@@ -1,6 +1,6 @@
 .countdown {
     width: 340px;
-    height: 150px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,6 +61,7 @@
 
 .subtitle {
     transform: translateZ(2rem);
+    width: 100%;
 }
 
 .back {
@@ -77,10 +78,11 @@
     font-size: 46px;
     font-weight: 400;
     color: white;
-    /* padding: 20px; */
+    height: 100%;
     max-width: 100%;
     color: white;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 #timer div {
@@ -90,7 +92,7 @@
     padding: 5px;
     background: #020b43;
     border-radius: 10px;
-    /* border: 2px solid #030d52; */
+    /* border: 2px; */
     margin: 5px;
 }
 

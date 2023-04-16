@@ -27,6 +27,10 @@ var x = setInterval(function () {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY HANH";
+        document.getElementById("timer").innerHTML = `
+        <image src="images/doraemon4.jpeg" />
+        <image src="images/doraemon3.gif" />
+        <image src="images/doraemon5.gif" />
+        `;
     }
 }, 1000);

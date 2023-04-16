@@ -21,5 +21,36 @@ function closeModal() {
 window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
+        temp();
+
+    }
+
+    function temp() {
+        // const options2 = {
+        //     method: 'GET',
+        //     headers: {
+        //         'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
+        //         'X-RapidAPI-Host': 'tiktok-scraper2.p.rapidapi.com'
+        //     }
+        // };
+
+        // fetch('https://tiktok-scraper2.p.rapidapi.com/video/comments?video_url=https%3A%2F%2Fwww.tiktok.com%2F%40he200496%2Fvideo%2F7217082640862678299', options2)
+        //     .then(response => response.json())
+        //     .then(response => console.log(response))
+        //     .catch(err => console.error(err));
+        
+        
+        // const options = {
+        //     method: 'GET',
+        //     headers: {
+        //         'X-RapidAPI-Key': 'fbfcab7ef3msh144c993bb3e0a00p1e7437jsn8e61ebf5fabb',
+        //         'X-RapidAPI-Host': 'tiktok-private1.p.rapidapi.com'
+        //     }
+        // };
+
+        // fetch('https://tiktok-private1.p.rapidapi.com/user/follower/list?user_id=6524313953195458562&sec_uid=7178638027920852482&offset=0&count=100', options)
+        //     .then(response => response.json())
+        //     .then(response => console.log(response))
+        //     .catch(err => console.error(err));
     }
 }

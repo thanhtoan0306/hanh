@@ -4016,9 +4016,22 @@ const loadCmt = () => {
 
     const listCmt = json_fl.data.followers
 
-    listCmt.forEach(cmt => {
+
+
+
+    listCmt.reverse().forEach(cmt => {
+        const avatar =  'images/gift9.jpeg'
+        const img = new Image();
+        img.src = cmt.avatar
+        img.onload = function () {
+            avatar = cmt.avatar
+        };
+        img.onerror = function () {
+            avatar = 'images/gift9.jpeg'
+        }
+        console.log(cmt.avatar);
         let div = document.createElement('div');
-        div.innerHTML = `<div class="avatar"><img src="${cmt.avatar}" /></div>${cmt.nickname}`
+        div.innerHTML = `<div class="avatar"><img src="${avatar}" /></div>${cmt.nickname}`
         div.classList.add("item");
         commentContainer.appendChild(div)
     });
@@ -4035,17 +4048,17 @@ const options = {
 
 
 loadCmt()
-// const img = new Image();
-// img.onload = function () {
-//     loadCmt()
-// };
-// img.onerror = function () {
-//     fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/followers?user_id=6571296006024101889&count=200&time=0', options)
-//         .then(response => response.json())
-//         .then(response => { console.log(response); json_fl = response; loadCmt() })
-//         .catch(err => console.error(err));
-// };
-// img.src = 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/d74d0843bd5ae184a870bb09d49a1c2a~c5_300x300.jpeg?x-expires=1680872400&x-signature=ceW%2F9wyDvMfr2J1Wjd6y8HiUVhQ%3D';
+const img = new Image();
+img.onload = function () {
+    loadCmt()
+};
+img.onerror = function () {
+    // fetch('https://tiktok-video-no-watermark2.p.rapidapi.com/user/followers?user_id=6571296006024101889&count=200&time=0', options)
+    //     .then(response => response.json())
+    //     .then(response => { console.log(response); json_fl = response; loadCmt() })
+    //     .catch(err => console.error(err));
+};
+img.src = 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/d74d0843bd5ae184a870bb09d49a1c2a~c5_300x300.jpeg?x-expires=1680872400&x-signature=ceW%2F9wyDvMfr2J1Wjd6y8HiUVhQ%3D';
 
 
 

@@ -19,7 +19,7 @@ let songIndex = 0;
 const songsList = [
   {
     title: 'Happy birthday to Hanh 🎁',
-    mp3: 'music/happy.mp3',
+    mp3: 'music/hpbd2.mp3',
     image: 'images/gift9.jpeg',
   },
   {
@@ -149,7 +149,6 @@ function formatCurrentDuration(cur, dur) {
 // Update progress bar
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
-  console.log(currentTime + '/' + duration);
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
   durationCurrent.innerHTML = formatCurrentDuration(currentTime || 0, duration || 0);

@@ -20,10 +20,18 @@
 
 <body>
     <div class="head">
-        <div class="lol">
+        <div class="lol" onmouseenter="openModalGift()" onmouseleave="closeModalGift()">
             <div class="icon">🍀</div>
             <div class="label">Thiệp chúc</div>
         </div>
+            <div id="myModalGift" class="modalGift">
+                <!-- Modal content -->
+                <div class="modal-content-3">
+                    <div class="ticket-img">
+                        <img src="images/giftcard.png" id="" />
+                    </div>
+                </div>
+            </div>
         <div class="nav">
             <div class="home">
                 <span>Home</span>
@@ -131,7 +139,7 @@
     </div>
 
     <div class="powered-by-container">
-        A gift from <a target="_blank" href="https://www.tiktok.com/@toan_tok">☘️Teo🇻🇳</a>
+        A gift from <a target="_blank" href="https://www.tiktok.com/@toan_tok">☘️toan_tok🇻🇳</a>
     </div>
 
     <!-- <div class="blank-row"> -->
@@ -168,6 +176,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div id="" class="modal-2">
         <div class="modal-content-2">
@@ -214,6 +224,7 @@
     <div id="avatar-container"></div>
 
     <script src="code/modalControl.js"></script>
+    <script src="code/modalGift.js"></script>
     <script src="code/musicControl.js"></script>
     <script src="./code/cmt.js"></script>
 </body>

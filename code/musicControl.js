@@ -23,9 +23,14 @@ const songsList = [
     image: 'images/lenka.jpg',
   },
   {
-    title: 'The show - Lendka',
-    mp3: 'music/lenka.mp3',
-    image: 'images/lenka.jpg',
+    title: '3107-1',
+    mp3: 'music/3107.mp3',
+    image: 'images/3107.jpeg',
+  },
+  {
+    title: 'Last Christmas',
+    mp3: 'music/lastchristmas.mp3',
+    image: 'images/lastchristmas.jpeg',
   },
   {
     title: 'Ex hate me',
@@ -43,14 +48,9 @@ const songsList = [
     image: 'images/ghequa.jpeg',
   },
   {
-    title: 'Last Christmas',
-    mp3: 'music/lastchristmas.mp3',
-    image: 'images/lastchristmas.jpeg',
-  },
-  {
-    title: '3107-1',
-    mp3: 'music/3107.mp3',
-    image: 'images/3107.jpeg',
+    title: 'The show - Lendka',
+    mp3: 'music/lenka.mp3',
+    image: 'images/lenka.jpg',
   },
 ]
 

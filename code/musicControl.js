@@ -53,6 +53,26 @@ const songsList = [
     mp3: 'music/3107.mp3',
     image: 'images/3107.jpeg',
   },
+  {
+    title: 'Dẫu có lỗi lầm',
+    mp3: 'music/daucoloilam.mp3',
+    image: 'images/3107.jpeg',
+  },
+  {
+    title: 'Thả vào mưa',
+    mp3: 'music/thavaomua.mp3',
+    image: 'images/3107.jpeg',
+  },
+  {
+    title: 'Sao em vô tình',
+    mp3: 'music/saoemvotinh.mp3',
+    image: 'images/3107.jpeg',
+  },
+  {
+    title: 'Lạ lùng',
+    mp3: 'music/lalung.mp3',
+    image: 'images/3107.jpeg',
+  },
 ]
 
 

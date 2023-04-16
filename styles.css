@@ -13,6 +13,7 @@ body {
 .head {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap:10px;
     padding-bottom: 10px;
     margin-bottom: 40px;
@@ -47,7 +48,6 @@ body {
 .nav {
     font-weight: bold;
     font-size: large;
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;

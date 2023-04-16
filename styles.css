@@ -141,7 +141,7 @@ body {
 }
 
 .foot {
-    display: none;
+    display: block;
     height: 80px;
     bottom: 0;
     position: fixed;

@@ -244,5 +244,5 @@ audio.addEventListener('ended', nextSong);
 // Click on progress bar
 // songItem.addEventListener('click', chooseSong);
 
-initSong();//
+// initSong();//
 

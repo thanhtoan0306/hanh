@@ -164,7 +164,7 @@ songsList.forEach((element, index) => {
   let div = document.createElement('div');
   div.setAttribute("id", `id${index}`);
   div.classList.add("song-item");
-  div.innerHTML = `${index + 1}. ${element.title}`;
+  div.innerHTML = `<div>${index + 1}. ${element.title}</div>🍀</div>`;
   changeSongTheme();
 
   div.onclick = function () {

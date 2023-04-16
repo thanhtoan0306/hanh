@@ -120,6 +120,17 @@ function changeSongTheme() {
   oldSong?.classList.remove("chosen-song");
   const newSong = document.querySelector(`div#id${songIndex}`);
   newSong?.classList.add("chosen-song");
+  const snowflake = document.querySelectorAll(".snowflake")
+  if (songIndex === 2) {
+    snowflake.forEach(element => {
+      element.innerText = '❄️'
+    });
+    
+  } else {
+    snowflake.forEach(element => {
+      element.innerText = '🌸'
+    });
+  }
 }
 
 // Previous song
@@ -169,7 +180,6 @@ function formatCurrentDuration(cur, dur) {
 // Update progress bar
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;
-  console.log(currentTime + '/' + duration);
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
   durationCurrent.innerHTML = formatCurrentDuration(currentTime || 0, duration || 0);

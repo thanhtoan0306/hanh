@@ -121,6 +121,14 @@
     border-radius: 10px;
 }
 
+.christmas-song {
+    width: 100%;
+    color: white;
+    background-color: cyan !important;
+    /* transform: skew(-10deg); */
+    border-radius: 10px;
+}
+
 .ping {
     --uib-size: 50px;
     --uib-speed: 1s;

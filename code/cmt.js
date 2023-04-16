@@ -4013,15 +4013,10 @@ let json_fl = {
 
 const loadCmt = () => {
     const commentContainer = document.getElementById('container-comment');
-
     const listCmt = json_fl.data.followers
-
-
-
-
     listCmt.reverse().forEach(cmt => {
-        const avatar =  'images/gift9.jpeg'
-        const img = new Image();
+        let avatar = 'images/gift9.jpeg'
+        let img = new Image();
         img.src = cmt.avatar
         img.onload = function () {
             avatar = cmt.avatar
@@ -4029,7 +4024,7 @@ const loadCmt = () => {
         img.onerror = function () {
             avatar = 'images/gift9.jpeg'
         }
-        console.log(cmt.avatar);
+        // console.log(cmt.avatar);
         let div = document.createElement('div');
         div.innerHTML = `<div class="avatar"><img src="${avatar}" /></div>${cmt.nickname}`
         div.classList.add("item");
@@ -4048,7 +4043,7 @@ const options = {
 
 
 loadCmt()
-const img = new Image();
+let img = new Image();
 img.onload = function () {
     loadCmt()
 };

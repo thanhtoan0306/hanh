@@ -20,23 +20,19 @@ const songsList = [
   {
     title: 'Happy birthday to Hanh 🎁',
     mp3: 'music/happy.mp3',
-    image: 'images/lenka.jpg',
-  },
-  {
-    title: '3107-1',
-    mp3: 'music/3107.mp3',
-    image: 'images/3107.jpeg',
-  },
-  {
-    title: 'Last Christmas',
-    mp3: 'music/lastchristmas.mp3',
-    image: 'images/lastchristmas.jpeg',
+    image: 'images/gift9.jpeg',
   },
   {
     title: 'Ex hate me',
     mp3: 'music/exhateme.mp3',
     image: 'images/exhateme2.jpeg',
   },
+  {
+    title: 'Last Christmas',
+    mp3: 'music/lastchristmas.mp3',
+    image: 'images/lastchristmas.jpeg',
+  },
+
   {
     title: 'Chuyện đôi ta',
     mp3: 'music/chuyendoita.mp3',
@@ -51,6 +47,11 @@ const songsList = [
     title: 'The show - Lendka',
     mp3: 'music/lenka.mp3',
     image: 'images/lenka.jpg',
+  },
+  {
+    title: '3107-1',
+    mp3: 'music/3107.mp3',
+    image: 'images/3107.jpeg',
   },
 ]
 
@@ -123,6 +124,15 @@ function nextSong() {
     songIndex = 0;
   }
 
+  loadSong(songsList[songIndex]);
+  changeSongTheme()
+
+  playSong();
+}
+
+// INit song
+function initSong() {
+  songIndex = 0;
   loadSong(songsList[songIndex]);
   changeSongTheme()
 
@@ -203,4 +213,6 @@ audio.addEventListener('ended', nextSong);
 
 // Click on progress bar
 // songItem.addEventListener('click', chooseSong);
+
+initSong();//
 
